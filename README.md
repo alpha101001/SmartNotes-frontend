@@ -1,2 +1,2 @@
 # SmartNotes-frontend
-self-project
+
