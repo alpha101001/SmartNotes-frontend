@@ -1,0 +1,70 @@
+// .eslintrc
+{
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true,
+			"useJSXTextNode": true
+		},
+		"ecmaVersion": 2018,
+		"sourceType": "module",
+		"project": "./tsconfig.json"
+	},
+	"extends": [
+		"airbnb-typescript",
+		"airbnb/hooks",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:jest/recommended",
+		"plugin:prettier/recommended",
+		"prettier"
+	],
+	"overrides": [
+		{
+			"files": ["*.js"],
+			"parser": "@typescript-eslint/parser"
+		}
+	],
+	"plugins": ["@typescript-eslint", "jest", "import"],
+	"env": {
+		"browser": true,
+		"es6": true,
+		"jest": true
+	},
+	"globals": {
+		"Atomics": "readonly",
+		"SharedArrayBuffer": "readonly"
+	},
+	"rules": {
+		"react/jsx-filename-extension": "off",
+		"linebreak-style": "off",
+		"react-hooks/rules-of-hooks": "error",
+		"react-hooks/exhaustive-deps": "warn",
+		"key-spacing": "off",
+		"object-curly-spacing": [2, "always"],
+		"no-undef": 1,
+		"camelcase": "off",
+		"radix": "off",
+		"@typescript-eslint/no-unused-vars": "error",
+		"@typescript-eslint/no-explicit-any": "error",
+		"@typescript-eslint/explicit-module-boundary-types": "off",
+		"max-lines-per-function": ["error", 1000],
+		"complexity": ["error", 40],
+		"react/prop-types": 0,
+		"@next/next/no-img-element": "off",
+		"no-multiple-empty-lines": [
+			2,
+			{
+				"max": 1
+			}
+		],
+		"@typescript-eslint/ban-ts-comment": "off",
+		"react/display-name": "off",
+		"prettier/prettier": [
+			"error",
+			{
+				"endOfLine": "auto"
+			}
+		],
+		"prefer-const": "off"
+	}
+}
