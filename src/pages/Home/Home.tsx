@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import CreateNote from '../../components/NoteManagement/CreateNote';
 import { useGetNotesQuery } from '../../redux-Store/apiSlices/api';
 import { Box, Typography } from '@mui/material';
@@ -10,10 +10,22 @@ import { FormValues } from '../../components/NoteManagement/NoteCard';
 import DOMPurify from 'dompurify';
 import { useAppDispatch } from '../../redux-Store/reduxHooks';
 import { updateNote } from '../../redux-Store/componentSlices/notesSlice';
+import useNotify from '../../utils/Helper/notify';
 // import { Container } from './styles';
 
 const Home: React.FC = () => {
 	const navigate = useNavigate();
+	const userId = localStorage.getItem('currentUserId');
+	const { errorNotify } = useNotify();
+	const [isNotified, setIsNotified] = useState(false);
+	useEffect(() => {
+		if (!userId) {
+			errorNotify('Please login to continue');
+
+			navigate('/login');
+		}
+	}, [userId]);
+
 	const handleCreateNote = () => {
 		navigate('/create-note');
 	};
