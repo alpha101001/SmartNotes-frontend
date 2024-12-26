@@ -47,7 +47,7 @@
 
 ![image](https://github.com/user-attachments/assets/7901f23c-bb1d-4af8-a833-67e9b6607a11)
 
-# update Note
+# Update Note
 
 ![image](https://github.com/user-attachments/assets/b47ceee0-f11c-48cb-83ca-d1d12babb7db)
 
