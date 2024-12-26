@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import CreateNote from '../../components/NoteManagement/CreateNote';
 import { useGetNotesQuery } from '../../redux-Store/apiSlices/api';
 import { Box, Typography } from '@mui/material';
@@ -17,7 +17,7 @@ const Home: React.FC = () => {
 	const navigate = useNavigate();
 	const userId = localStorage.getItem('currentUserId');
 	const { errorNotify } = useNotify();
-	const [isNotified, setIsNotified] = useState(false);
+
 	useEffect(() => {
 		if (!userId) {
 			errorNotify('Please login to continue');
