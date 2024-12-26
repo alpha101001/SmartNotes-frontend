@@ -1,6 +1,18 @@
 
 # SmartNotes-frontend
 
+## Upcoming Updates
+
+### Key Enhancements:
+1. **AWS Integration for Enhanced Security**:
+   - AWS services will be implemented to strengthen security measures across the application.
+
+2. **Future Payment Integration**:
+   - A robust payment method will be added in upcoming phases to streamline transactions.
+
+3. **Bug Fixes**:
+   - Several identified bugs will be addressed to improve overall system performance and reliability.
+
 
 # Log in Page
 
@@ -31,7 +43,7 @@
 
 ![image](https://github.com/user-attachments/assets/eac00cca-06e3-4d89-8e0f-b0215ff1e605)
 
-#Note List and pinned highlighted
+# Note List and pinned highlighted
 
 ![image](https://github.com/user-attachments/assets/7901f23c-bb1d-4af8-a833-67e9b6607a11)
 
@@ -41,17 +53,7 @@
 
 
 
-## Upcoming Updates
 
-### Key Enhancements:
-1. **AWS Integration for Enhanced Security**:
-   - AWS services will be implemented to strengthen security measures across the application.
-
-2. **Future Payment Integration**:
-   - A robust payment method will be added in upcoming phases to streamline transactions.
-
-3. **Bug Fixes**:
-   - Several identified bugs will be addressed to improve overall system performance and reliability.
 
 
 
